@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Music Player</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn6+C6PxuDtzNLwrUZRcpEotO2qhYH7qQxVscptJtfHDUWIgGgTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+      <div class="music-container">
+        <div class="music-info">
+          <h4 id="title">Song Title</h4>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <audio id="audio" src="music/ukulele.mp3"></audio>
+
+        <div class="img-container">
+          <video id="music-cover" autoplay loop muted>
+            <source src="https://v.ftcdn.net/06/31/32/00/240_F_631320020_xCy4vDMDmFJVNn6ou3RfXpKUCuSawH5J_ST.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+    </html>
